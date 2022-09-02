@@ -1,0 +1,15 @@
+body {
+  background: #fef9a7;
+  font-size: 14px;
+  font-weight: 500;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+a {
+  color: green;
+}
+a:hover {
+  color: green;
+}
