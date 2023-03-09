@@ -42,3 +42,188 @@ a:hover {
   box-shadow: 20px 40px 30px gray;
   border-radius: 50%;
 }
+
+button {
+  background-color: #fef9a7;
+  border: none;
+  font-size: 20px;
+  margin: 20px 20px;
+}
+
+.btn-link:hover {
+}
+.empty-div {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 300px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+.green-div {
+  padding: 40px;
+  position: absolute;
+  background: radial-gradient(at 70% 30%, white 1%, yellow 10%, green 90%);
+  border-radius: 50%;
+  box-shadow: -5px 10px 10px gray;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s, transform-origin 1s;
+}
+.green-div:hover {
+  transform: rotate(20deg);
+  transform-origin: 0% 500%;
+  transition: transform 0.5s, transform-origin 1s;
+}
+.empty2-div {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 300px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+.green2-div {
+  padding: 40px;
+  position: absolute;
+  background: radial-gradient(at 70% 30%, white 1%, yellow 10%, green 90%);
+  border-radius: 50%;
+  box-shadow: -5px 10px 10px gray;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s, transform-origin 1s;
+}
+.green2-div:hover {
+  transform: rotate(10deg) scale(2, 2);
+  transform-origin: 0% 0%;
+  transition: transform 0.5s, transform-origin 1s;
+}
+
+.empty3-div {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 300px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+.green3-div {
+  padding: 40px;
+  position: absolute;
+  background: radial-gradient(at 70% 30%, white 1%, yellow 10%, green 90%);
+  border-radius: 50%;
+  box-shadow: -5px 10px 10px gray;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  animation: ball 2s linear infinite;
+}
+
+.sky {
+  background-color: DarkSlateBlue;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  margin: 300px;
+  border: 1px solid black;
+  animation: sky 3s linear infinite;
+}
+.grass {
+  position: absolute;
+  margin-top: 148px;
+  animation: grass 3s linear infinite;
+}
+.sun {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: orange;
+  border-radius: 50%;
+  margin: 139px auto auto 0px;
+  animation: sun 3s linear infinite;
+}
+
+@keyframes sun {
+  25% {
+    background: yellow;
+    margin: 80px auto auto 50px;
+  }
+  50% {
+    background: rgb(255, 253, 106);
+    margin: 20px auto auto 120px;
+  }
+  75% {
+    background: yellow;
+    margin: 80px auto auto 200px;
+  }
+  100% {
+    background: orange;
+    margin: 139px auto auto 250px;
+  }
+}
+@keyframes sky {
+  25% {
+    background: skyblue;
+  }
+  50% {
+    background: PaleTurquoise;
+  }
+  75% {
+    background: skyblue;
+  }
+  100% {
+    background: DarkSlateBlue;
+  }
+}
+
+@keyframes ball {
+  12.5% {
+    background: radial-gradient(
+      at 70% 30%,
+      white 1%,
+      yellow 10%,
+      LawnGreen 90%
+    );
+    transform: rotate(40deg);
+  }
+  25% {
+    background: radial-gradient(at 70% 30%, white 1%, yellow 10%, yellow 90%);
+    transform: rotate(80deg);
+  }
+  37.5% {
+    background: radial-gradient(at 70% 30%, white 1%, yellow 10%, orange 90%);
+    transform: rotate(120deg);
+  }
+  50% {
+    background: radial-gradient(
+      at 70% 30%,
+      white 1%,
+      yellow 10%,
+      orangered 90%
+    );
+    transform: rotate(160deg);
+  }
+  62.5% {
+    background: radial-gradient(at 70% 30%, white 1%, yellow 10%, red 90%);
+    transform: rotate(200deg);
+  }
+  75% {
+    background: radial-gradient(at 70% 30%, white 1%, yellow 10%, orangred 90%);
+    transform: rotate(240deg);
+  }
+  85.5% {
+    background: radial-gradient(at 70% 30%, white 1%, yellow 10%, yellow 90%);
+    transform: rotate(280deg);
+  }
+  100% {
+    background: radial-gradient(
+      at 70% 30%,
+      white 1%,
+      yellow 10%,
+      LawnGreen 90%
+    );
+    transform: rotate(320deg);
+  }
+}
