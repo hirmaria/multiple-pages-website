@@ -132,49 +132,54 @@ button {
 }
 .grass {
   position: absolute;
-  margin-top: 148px;
-  animation: grass 3s linear infinite;
+  margin-top: 110px;
 }
 .sun {
   position: absolute;
   height: 50px;
   width: 50px;
   background: orange;
+  box-shadow: 25 25 50px yellow, -25 -25 50px yellow;
   border-radius: 50%;
   margin: 139px auto auto 0px;
   animation: sun 3s linear infinite;
 }
 
 @keyframes sun {
-  25% {
+  20% {
     background: yellow;
     margin: 80px auto auto 50px;
   }
-  50% {
+  40% {
     background: rgb(255, 253, 106);
     margin: 20px auto auto 120px;
   }
-  75% {
+  60% {
     background: yellow;
     margin: 80px auto auto 200px;
   }
-  100% {
+  80% {
     background: orange;
     margin: 139px auto auto 250px;
   }
+  100% {
+  }
 }
 @keyframes sky {
-  25% {
+  20% {
     background: skyblue;
   }
-  50% {
+  40% {
     background: PaleTurquoise;
   }
-  75% {
+  60% {
     background: skyblue;
   }
-  100% {
+  80% {
     background: DarkSlateBlue;
+  }
+  100% {
+    background: MidnightBlue;
   }
 }
 
